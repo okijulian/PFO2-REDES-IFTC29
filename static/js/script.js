@@ -1,5 +1,5 @@
 // URL base de la API backend
-const BASE_URL = "http://okijulian.pythonanywhere.com";
+const BASE_URL = "https://okijulian.pythonanywhere.com";
 // --- FUNCIONES DE UTILIDAD ---
 
 /**
