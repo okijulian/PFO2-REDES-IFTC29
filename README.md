@@ -64,16 +64,15 @@ Abra el archivo `frontend/index.html` en su navegador web. Será redirigido auto
 
 *(Aquí puedes añadir capturas de pantalla de la aplicación funcionando. Por ejemplo: la página de login, el registro con las preguntas de seguridad, y la lista de tareas con algunas tareas añadidas y una marcada como completada).*
 
-![Inicio sesion](\static\img\inicio.png)
+![Inicio sesion](./static/img/inicio.png)
 
+![Registro](./static/img/registro.png)
 
-![Registro](static\img\registro.png)
+![Recuperar](./static/img/recuperar.png)
 
-![Registro](static\img\recuperar.png)
+![Recuperar2](./static/img/recuperar2.png)
 
-![Registro](static\img\recuperar2.png)
-
-![Registro](static\img\tareas.png)
+![Tareas](./static/img/tareas.png)
 
 ## Publicación en GitHub Pages
 
