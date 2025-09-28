@@ -18,8 +18,13 @@ CORS(app, resources={r"/*": {"origins": "https://okijulian.github.io"}})
 # Clave secreta para la firma de tokens JWT (en un entorno de producción, esto debería ser más seguro y no estar en el código)
 app.config['SECRET_KEY'] = 'tu_super_secreto'
 
-# Nombre del archivo de la base de datos (ruta absoluta para PythonAnywhere)
-NOMBRE_BD = "/home/okijulian/PFO2-REDES-IFTS29/backend/tasks.db"
+# SOLO USAR UNA BASE DE DATOS - COMENTA UNA DE LAS SIGUIENTES LÍNEAS:
+
+# Opción 1: Para desarrollo local (comenta esta línea si usas PythonAnywhere)
+NOMBRE_BD = "tasks.db"
+
+# Opción 2: Para PythonAnywhere (descomenta esta línea para producción)
+#NOMBRE_BD = "/home/okijulian/backendPF02/tasks.db"
 
 # --- DECORADOR DE AUTENTICACIÓN ---
 
