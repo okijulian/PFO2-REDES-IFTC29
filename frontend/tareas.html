@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Tareas</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mis Tareas</h1>
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+
+        <div class="form-group add-task-container">
+            <input type="text" id="nueva-tarea" placeholder="Añadir nueva tarea...">
+            <button onclick="crearTarea()">Añadir</button>
+        </div>
+
+        <ul id="lista-tareas"></ul>
+
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+    <script>
+        // Al cargar la página, verificar el estado de la sesión y cargar las tareas
+        window.onload = function () {
+            verificarEstadoSesion();
+            obtenerTareas();
+        };
+    </script>
+</body>
+
+</html>

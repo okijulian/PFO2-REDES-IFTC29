@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <div class="form-group">
+            <label for="reg-usuario">Usuario:</label>
+            <input type="text" id="reg-usuario" placeholder="Nombre de usuario">
+        </div>
+        <div class="form-group">
+            <label for="reg-contrasena">Contraseña:</label>
+            <input type="password" id="reg-contrasena" placeholder="Contraseña">
+        </div>
+        <hr>
+        <h3>Pregunta de Seguridad</h3>
+        <div class="form-group">
+            <label for="reg-pregunta">Pregunta:</label>
+            <select id="reg-pregunta">
+                <option value="¿Cuál es el nombre de tu primera mascota?">¿Cuál es el nombre de tu primera mascota?</option>
+                <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+                <option value="¿En qué ciudad naciste?">¿En qué ciudad naciste?</option>
+                <option value="¿Cuál es el segundo nombre de tu madre?">¿Cuál es el segundo nombre de tu madre?</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="reg-respuesta">Respuesta:</label>
+            <input type="text" id="reg-respuesta" placeholder="Respuesta a la pregunta">
+        </div>
+        <button onclick="registrar()">Registrar</button>
+        
+        <div id="mensaje"></div>
+
+        <div class="links">
+            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
