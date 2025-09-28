@@ -13,7 +13,8 @@ from flask_cors import CORS
 # Inicialización de la aplicación Flask
 app = Flask(__name__)
 # Habilitar CORS para permitir peticiones desde el frontend
-CORS(app)
+# Permitir peticiones solo desde tu página de GitHub Pages
+CORS(app, resources={r"/*": {"origins": "https://okijulian.github.io"}})
 # Clave secreta para la firma de tokens JWT (en un entorno de producción, esto debería ser más seguro y no estar en el código)
 app.config['SECRET_KEY'] = 'tu_super_secreto'
 
